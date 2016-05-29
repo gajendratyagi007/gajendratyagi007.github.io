@@ -31,6 +31,9 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 
+
+
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -39,6 +42,27 @@
     <![endif]-->
 </head>
 <body>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1804945116395949',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+
 <div id="preloader">
   <div id="status"> <img src="img/preloader.gif" height="64" width="64" alt=""> </div>
 </div>
@@ -58,8 +82,8 @@
         <li><a href="#services-section" class="page-scroll">Timeline</a></li>
         <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
         <li><a href="#about-section" class="page-scroll">About Me</a></li>
-        <li><a href="#team-section" class="page-scroll">Team</a></li>
-        <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li>
+       <!--  <li><a href="#team-section" class="page-scroll">Team</a></li> -->
+    <!--     <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li> -->
         <li><a href="#contact-section" class="page-scroll">Contact</a></li>
       </ul>
     </div>
@@ -73,9 +97,16 @@
   <div class="intro-text">
     <h1 class="wow fadeInDown">I am <strong><span class="color">Gajendra</span></strong></h1>
     <p class="wow fadeInDown">a full stack developer</p>
-    <a href="#works-section" class="btn btn-default btn-lg page-scroll wow fadeInUp" data-wow-delay="200ms">My Portfolio</a> </div>
+    <a href="#works-section" class="btn btn-default btn-lg page-scroll wow fadeInUp" data-wow-delay="200ms">My Portfolio</a> 
+	
+	</div>
 </header>
-
+<!--<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>-->
 <!-- Timeline Section -->
 <div id="services-section" class="text-center">
   <div class="container">
@@ -139,7 +170,7 @@
                 Web Application
                 <div class="clearfix"></div>
                 <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/lms.jpg" class="img-responsive" alt="LMS"> </a> </div>
+              <img src="img/portfolio/lms.jpg" class="img-responsive" style="border-radius: 10%" alt="LMS"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 app">
@@ -150,7 +181,7 @@
                 WorkShop
                 <div class="clearfix"></div>
                 <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/dst.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+              <img src="img/portfolio/dst.jpg" class="img-responsive" style="border-radius: 10%" alt="Project Title"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 web">
@@ -161,7 +192,7 @@
                Web Application
                 <div class="clearfix"></div>
                 <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/onlinemovie.jpg" class="img-responsive" alt="Online Movie Ticket Booking"> </a> </div>
+              <img src="img/portfolio/onlinemovie.jpg" class="img-responsive" style="border-radius: 10%" alt="Online Movie Ticket Booking"> </a> </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3 col-lg-3 web">
@@ -172,7 +203,7 @@
                 Web Application
                 <div class="clearfix"></div>
                 <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/restaurant.jpg" class="img-responsive" alt="Restaurant Management System"> </a> </div>
+              <img src="img/portfolio/restaurant.jpg" class="img-responsive" style="border-radius: 10%" alt="Restaurant Management System"> </a> </div>
           </div>
         </div>
         <!--<div class="col-sm-6 col-md-3 col-lg-3 app">
@@ -195,7 +226,7 @@ Tracking in Wireless Sensor Networks</h4>
                 WSN Research Work
                 <div class="clearfix"></div>
                 <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/wsn.png" class="img-responsive" alt="Anchor Free Positioning For Target
+              <img src="img/portfolio/wsn.png" class="img-responsive" style="border-radius: 10%" alt="Anchor Free Positioning For Target
 Tracking in Wireless Sensor Networks"> </a> </div>
           </div>
         </div>
@@ -208,7 +239,7 @@ Environment</h4>
                 Distributed System Research Work
                 <div class="clearfix"></div>
                 <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/distri.jpg" class="img-responsive" alt="Co-Leader Based Leader Election Algorithm in Distributed
+              <img src="img/portfolio/distri.jpg" class="img-responsive" style="border-radius: 10%" alt="Co-Leader Based Leader Election Algorithm in Distributed
 Environment"> </a> </div>
           </div>
         </div>
@@ -221,7 +252,7 @@ Environment</h4>
                 Distributed System Research Work
                 <div class="clearfix"></div>
                 <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/distri1.jpg" class="img-responsive" alt="Location Based Coordinator Election Algorithm inDistributed
+              <img src="img/portfolio/distri1.jpg" class="img-responsive" style="border-radius: 10%" alt="Location Based Coordinator Election Algorithm inDistributed
 Environment"> </a> </div>
           </div>
         </div>
@@ -233,7 +264,7 @@ Environment"> </a> </div>
                 Desktop Application
                 <div class="clearfix"></div>
                 <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/bank.jpg" class="img-responsive" alt="Distributed Banking System"> </a> </div>
+              <img src="img/portfolio/bank.jpg" class="img-responsive" style="border-radius: 10%" alt="Distributed Banking System"> </a> </div>
           </div>
         </div>
       </div>
@@ -268,14 +299,14 @@ Environment"> </a> </div>
 				  <li>Driving</li>
                 </ul>
               </div>
-              <div class="col-lg-6 col-sm-6 col-xs-12">
+             <!-- <div class="col-lg-6 col-sm-6 col-xs-12">
                 <ul>
                   <li>Lorem ipsum dolor</li>
                   <li>Consectetur adipiscing</li>
                   <li>Duis sed dapibus leo</li>
                   <li>Sed commodo nibh ante</li>
                 </ul>
-              </div>
+              </div>-->
             </div>
           </div>     
       </div>
@@ -286,10 +317,10 @@ Environment"> </a> </div>
 <div id="team-section" class="text-center">
   <div class="container">
     <div class="section-title wow fadeInDown">
-      <h2>Meet the <strong>Team</strong></h2>
+      <h2>Key<strong> Skills</strong></h2>
       <hr>
       <div class="clearfix"></div>      
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p> -->
     </div>
     <div id="row">
       <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="200ms">
@@ -413,6 +444,7 @@ Environment"> </a> </div>
               <input type="email" id="email" class="form-control" placeholder="Email" required="required">
               <p class="help-block text-danger"></p>
             </div>
+			
           </div>
         </div>
         <div class="form-group">

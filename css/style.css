@@ -646,3 +646,20 @@ label {
 	padding: 22% 10%;
 }
 }
+
+.background_imaget {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 200%;
+    left: -50%;
+    position: fixed;
+    width: 200%;}
+
+.background_imaget img{
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin: auto;
+    min-height: 50%;
+    min-width: 50%;
+    right: 0;
+    top: 0;}

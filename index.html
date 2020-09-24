@@ -10,7 +10,7 @@
 
   <!-- Favicons
     ================================================== -->
-  <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
@@ -58,7 +58,7 @@
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) { return; }
       js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js";
+      js.src = "https://connect.facebook.com/en_US/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
@@ -312,47 +312,24 @@ Environment">
     </div>
   </div>
 
-  <!-- Gallery-->
-  <div id="gallery-section" >
+   <!-- Gallery-->
+   <div id="gallery-section" class="text-center" >
     <div class="container">
       <div class="section-title text-center wow fadeInDown">
-        <h2><strong>About</strong> me</h2>
+        <h2><strong>Gallery</strong></h2>
         <hr>
-        <div class="clearfix"></div>
-        <p>.</p>
+        <div class="clearfix"></div>        
       </div>
-      <div class="row">
-        <div class="col-md-6 wow fadeInLeft"> <img src="img/about.png" class="img-responsive"> </div>
-        <div class="col-md-6 wow fadeInRight">
-          <h4>Who I am</h4>
-          <p>So now you have come here already, I hope you know something about me. I'm born and brought up in Agra, now
-            in Hyderabad, living and enjoying my life just like a normal human being.</p>
-          <div class="space"></div>
-          <h4>What I do & My Hobbies</h4>
-          <p> Well, I'm an IT Professional. Do check out My work section, if you wanna know more about it.</p>
-          <div class="space"></div>
-          <div class="list-style">
-            <div class="row">
-              <div class="col-lg-6 col-sm-6 col-xs-12">
-                <ul>
-                  <li>Coding</li>
-                  <li>Exploring new Technologies</li>
-                  <li>Travelling (Exploring new places)</li>
-                  <li>Driving</li>
-                </ul>
-              </div>
-              <!-- <div class="col-lg-6 col-sm-6 col-xs-12">
-                <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Consectetur adipiscing</li>
-                  <li>Duis sed dapibus leo</li>
-                  <li>Sed commodo nibh ante</li>
-                </ul>
-              </div>-->
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="owl-demo">
+        <div class="item img-responsive fit-image"><img src="img/mypics/1.jpg" alt="Image"></div>
+        <div class="item img-responsive fit-image"><img src="img/mypics/2.jpg" alt="Image"></div>     
+        <div class="item img-responsive fit-image"><img src="img/mypics/3.jpg" alt="Image"></div>     
+        <div class="item img-responsive fit-image"><img src="img/mypics/4.jpg" alt="Image"></div>     
+        <div class="item img-responsive fit-image"><img src="img/mypics/5.jpg" alt="Image"></div>     
+        <div class="item img-responsive fit-image"><img src="img/mypics/6.jpg" alt="Image"></div>     
+        <div class="item img-responsive fit-image"><img src="img/mypics/7.jpg" alt="Image"></div>     
+        <div class="item img-responsive fit-image"><img src="img/mypics/8.jpg" alt="Image"></div>     
+      </div> 
     </div>
   </div>
   <!-- About Section -->
@@ -361,8 +338,7 @@ Environment">
       <div class="section-title text-center wow fadeInDown">
         <h2><strong>About</strong> me</h2>
         <hr>
-        <div class="clearfix"></div>
-        <p>.</p>
+        <div class="clearfix"></div>        
       </div>
       <div class="row">
         <div class="col-md-6 wow fadeInLeft"> <img src="img/about.png" class="img-responsive"> </div>
@@ -381,7 +357,7 @@ Environment">
                   <li>Coding</li>
                   <li>Exploring new Technologies</li>
                   <li>Travelling (Exploring new places)</li>
-                  <li>Driving</li>
+                  <li>Long Drives</li>
                 </ul>
               </div>
               <!-- <div class="col-lg-6 col-sm-6 col-xs-12">
@@ -927,7 +903,7 @@ Environment">
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/SmoothScroll.js"></script>
   <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/js/jquery.prettyPhoto.min.js"></script> 
   <script type="text/javascript" src="js/jquery.isotope.js"></script>
   <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
   <script type="text/javascript" src="js/contact_me.js"></script>
@@ -936,6 +912,22 @@ Environment">
   <!-- Javascripts
     ================================================== -->
   <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+<script>
+  $(document).ready(function() {
+ 
+ $("#owl-demo").owlCarousel({
+
+     autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+     items : 4,
+     itemsDesktop : [1199,3],
+     itemsDesktopSmall : [979,3]
+
+ });
+
+});
+</script>
 </body>
 
 </html>

@@ -1,933 +1,165 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gajendra Tyagi</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Favicons
-    ================================================== -->
+  <meta name="description" content="Portfolio of Gajendra Tyagi, Senior Full Stack .NET Developer specialising in Azure integration, microservices and Angular.">
+  <meta name="author" content="Gajendra Tyagi">
+  <title>Gajendra Tyagi — Full Stack .NET Developer</title>
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
-
-  <!-- Slider
-    ================================================== -->
-  <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-  <link href="css/owl.theme.css" rel="stylesheet" media="screen">
-
-  <!-- Stylesheet
-    ================================================== -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-
-
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <div class="page-glow page-glow--one"></div>
+  <div class="page-glow page-glow--two"></div>
 
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        appId: '1804945116395949',
-        xfbml: true,
-        version: 'v2.6'
-      });
-    };
-
-    (function (d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) { return; }
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.com/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-
-
-
-  <div id="preloader">
-    <div id="status"> <img src="img/preloader.gif" height="64" width="64" alt=""> </div>
-  </div>
-  <!-- Navigation
-    ==========================================-->
-  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-          data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
-            class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a class="navbar-brand" href="index.html"><i class="fa fa-flag-checkered fa-flip-horizontal"></i>
-          Gajendra<strong></strong></a> </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#home" class="page-scroll">Home</a></li>
-          <li><a href="#services-section" class="page-scroll">Timeline</a></li>
-          <li><a href="#gallery-section" class="page-scroll">Gallery</a></li>
-          <li><a href="#works-section" class="page-scroll">My Work</a></li>
-          <li><a href="#about-section" class="page-scroll">About Me</a></li>
-          <!--  <li><a href="#team-section" class="page-scroll">Team</a></li> -->
-          <!--     <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li> -->
-          <li><a href="#contact-section" class="page-scroll">Contact</a></li>
-        </ul>
-      </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
-
-  <!-- Header -->
-  <header class="text-center" name="home">
-    <div class="intro-text">
-      <h1 class="wow fadeInDown">Hey <strong><span class="color">there...!!</span></strong></h1>
-      <p class="wow fadeInDown">Welcome to my personal portfolio.</p>
-      <a href="#works-section" class="btn btn-default btn-lg page-scroll wow fadeInUp" data-wow-delay="200ms">My
-        Portfolio</a>
-
-    </div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Gajendra Tyagi home"><span>GT</span> / portfolio</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span>＋</span></button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#work">Selected work</a>
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-  <!--<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>-->
-  <!-- Timeline Section -->
-  <div id="services-section" class="text-center">
-    <div class="container">
-      <div class="section-title wow fadeInDown">
-        <h2>My <strong>Timeline</strong></h2>
-        <hr>
-        <div class="clearfix"></div>
-        <p>The milestones of my career are... </p>
-      </div>
-      <div class="space"></div>
-      <div class="row">
-        <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="200ms"> <i class="fa"><img
-              class="img-responsive" src="img/Cognizant.png" style="border-radius:50%" height="100px" width="100px"
-              alt=""></i>
-          <h4><strong>Currently</strong></h4>
-          <p>I am associated with Cognizant Technology Solutions as a Senior Developer working on Microsoft .Net
-            framework and related technologies.</p>
-        </div>
-        <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="400ms"> <i class="fa"><img
-              class="img-responsive" src="img/juit.png" style="border-radius:50%" height="100px" width="100px"
-              alt=""></i>
-          <h4><strong>Post Graduation</strong></h4>
-          <p>Completed M.Tech in Computer Science and Engineering from JayPee University of Information Technology,
-            Waknaghat, Solan, Himachal Pradesh in May 2015 . </p>
-        </div>
-        <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="600ms"> <i class="fa"><img
-              class="img-responsive" src="img/Uptu-logo.png" style="border-radius:50%" height="100px" width="100px"
-              alt=""></i>
-          <h4><strong>Graduation</strong></h4>
-          <p>Completed B.Tech in Computer Science and Engineering from Radha Govind Engineering College, Meerut
-            affiliated to Uttar Pradesh Technical University, Lucknow in June 2012 .</p>
-        </div>
-        <div class="col-md-3 col-sm-6 service wow fadeInUp" data-wow-delay="800ms"> <i class="fa"><img
-              class="img-responsive" src="img/simpkins.jpg" style="border-radius:50%" height="100px" width="100px"
-              alt=""></i>
-          <h4><strong>Senior Secondary</strong></h4>
-          <p>Completed Senior Secondary from Simpkins School, Agra, Uttar Pradesh in 2008</p>
-        </div>
 
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Section -->
-  <div id="works-section" class="text-center">
-    <div class="container">
-      <!-- Container -->
-      <div class="section-title wow fadeInDown">
-        <h2>My <strong>Work</strong></h2>
-        <hr>
-        <div class="clearfix"></div>
-        <p>This section has all the details of my work that I have done till now. It includes projects of my
-          professional career as well as my research work.</p>
-      </div>
-      <div class="categories">
-        <ul class="cat">
-          <li>
-            <ol class="type">
-              <li><a href="#" data-filter="*" class="active">All</a></li>
-              <li><a href="#" data-filter=".web">Web Applications</a></li>
-              <li><a href="#" data-filter=".app">Work Shops and Seminars</a></li>
-              <li><a href="#" data-filter=".branding">Research Work</a></li>
-            </ol>
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-      </div>
-      <div class="row">
-        <div class="portfolio-items">
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
-              <div class="hover-bg"> <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                  <div class="hover-text">
-                    <h4>LMS</h4>
-                    Web Application
-                    <div class="clearfix"></div>
-                    <i class="fa fa-plus"></i>
-                  </div>
-                  <img src="img/portfolio/lms.jpg" class="img-responsive" style="border-radius: 10%" alt="LMS">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 app">
-            <div class="portfolio-item wow fadeInUp" data-wow-delay="400ms">
-              <div class="hover-bg"> <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                  <div class="hover-text">
-                    <h4>ENHANCING TRAINEE ENGAGEMENT</h4>
-                    WorkShop
-                    <div class="clearfix"></div>
-                    <i class="fa fa-plus"></i>
-                  </div>
-                  <img src="img/portfolio/dst.jpg" class="img-responsive" style="border-radius: 10%"
-                    alt="Project Title">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item wow fadeInUp" data-wow-delay="600ms">
-              <div class="hover-bg"> <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                  <div class="hover-text">
-                    <h4>Online Movie Ticket Booking</h4>
-                    Web Application
-                    <div class="clearfix"></div>
-                    <i class="fa fa-plus"></i>
-                  </div>
-                  <img src="img/portfolio/onlinemovie.jpg" class="img-responsive" style="border-radius: 10%"
-                    alt="Online Movie Ticket Booking">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item wow fadeInUp" data-wow-delay="800ms">
-              <div class="hover-bg"> <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                  <div class="hover-text">
-                    <h4>Restaurant Management System</h4>
-                    Web Application
-                    <div class="clearfix"></div>
-                    <i class="fa fa-plus"></i>
-                  </div>
-                  <img src="img/portfolio/restaurant.jpg" class="img-responsive" style="border-radius: 10%"
-                    alt="Restaurant Management System">
-                </a> </div>
-            </div>
-          </div>
-          <!--<div class="col-sm-6 col-md-3 col-lg-3 app">
-          <div class="portfolio-item wow fadeInUp" data-wow-delay="1000ms">
-            <div class="hover-bg"> <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-              <div class="hover-text">
-                <h4>Project Title</h4>
-                App Development
-                <div class="clearfix"></div>
-                <i class="fa fa-plus"></i> </div>
-              <img src="img/portfolio/05.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>-->
-          <div class="col-sm-6 col-md-3 col-lg-3 branding">
-            <div class="portfolio-item wow fadeInUp" data-wow-delay="1200ms">
-              <div class="hover-bg"> <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                  <div class="hover-text">
-                    <h4>Anchor Free Positioning For Target
-                      Tracking in Wireless Sensor Networks</h4>
-                    WSN Research Work
-                    <div class="clearfix"></div>
-                    <i class="fa fa-plus"></i>
-                  </div>
-                  <img src="img/portfolio/wsn.png" class="img-responsive" style="border-radius: 10%" alt="Anchor Free Positioning For Target
-Tracking in Wireless Sensor Networks">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 branding ">
-            <div class="portfolio-item wow fadeInUp" data-wow-delay="1400ms">
-              <div class="hover-bg"> <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
-                  <div class="hover-text">
-                    <h4>Co-Leader Based Leader Election Algorithm in Distributed
-                      Environment</h4>
-                    Distributed System Research Work
-                    <div class="clearfix"></div>
-                    <i class="fa fa-plus"></i>
-                  </div>
-                  <img src="img/portfolio/distri.jpg" class="img-responsive" style="border-radius: 10%" alt="Co-Leader Based Leader Election Algorithm in Distributed
-Environment">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 branding ">
-            <div class="portfolio-item wow fadeInUp" data-wow-delay="1600ms">
-              <div class="hover-bg"> <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
-                  <div class="hover-text">
-                    <h4>Location Based Coordinator Election Algorithm inDistributed
-                      Environment</h4>
-                    Distributed System Research Work
-                    <div class="clearfix"></div>
-                    <i class="fa fa-plus"></i>
-                  </div>
-                  <img src="img/portfolio/distri1.jpg" class="img-responsive" style="border-radius: 10%" alt="Location Based Coordinator Election Algorithm inDistributed
-Environment">
-                </a> </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3 web">
-            <div class="portfolio-item wow fadeInUp" data-wow-delay="1800ms">
-              <div class="hover-bg"> <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                  <div class="hover-text">
-                    <h4>Distributed Banking System</h4>
-                    Desktop Application
-                    <div class="clearfix"></div>
-                    <i class="fa fa-plus"></i>
-                  </div>
-                  <img src="img/portfolio/bank.jpg" class="img-responsive" style="border-radius: 10%"
-                    alt="Distributed Banking System">
-                </a> </div>
-            </div>
-          </div>
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Senior Full Stack .NET Developer · Noida, India</p>
+        <h1>Building the systems<br><em>behind better ideas.</em></h1>
+        <p class="hero-intro">I design resilient enterprise products with .NET, Angular and Azure — turning complex business problems into clear, scalable software.</p>
+        <div class="hero-actions">
+          <a class="button button--primary" href="#work">Explore my work <span>↗</span></a>
+          <a class="button button--quiet" href="resume/Gajendra-Tyagi-Resume.pdf" download>Download resume <span>↓</span></a>
         </div>
       </div>
-    </div>
-  </div>
+      <div class="hero-aside">
+        <div class="orbital-card">
+          <span class="orbital-card__label">Currently focused on</span>
+          <strong>Cloud-first<br>engineering</strong>
+          <div class="orbital-card__line"></div>
+          <span class="orbital-card__meta">Azure · Microservices · Angular</span>
+        </div>
+      </div>
+      <div class="hero-scroll"><span>Scroll to explore</span><i></i></div>
+    </section>
 
-   <!-- Gallery-->
-   <div id="gallery-section" class="text-center" >
-    <div class="container">
-      <div class="section-title text-center wow fadeInDown">
-        <h2><strong>Gallery</strong></h2>
-        <hr>
-        <div class="clearfix"></div>        
+    <section class="signal-bar">
+      <div class="section-shell signal-bar__inner">
+        <div><strong>10</strong><span>years building<br>for the web</span></div>
+        <div><strong>04</strong><span>industries &<br>platforms</span></div>
+        <div><strong>01</strong><span>engineering mindset:<br>make it last</span></div>
+        <p>“The best architecture makes<br>the right thing feel simple.”</p>
       </div>
-      <div id="owl-demo">
-        <div class="item img-responsive fit-image"><img src="img/mypics/1.jpg" alt="Image"></div>
-        <div class="item img-responsive fit-image"><img src="img/mypics/2.jpg" alt="Image"></div>     
-        <div class="item img-responsive fit-image"><img src="img/mypics/3.jpg" alt="Image"></div>     
-        <div class="item img-responsive fit-image"><img src="img/mypics/4.jpg" alt="Image"></div>     
-        <div class="item img-responsive fit-image"><img src="img/mypics/5.jpg" alt="Image"></div>     
-        <div class="item img-responsive fit-image"><img src="img/mypics/6.jpg" alt="Image"></div>     
-        <div class="item img-responsive fit-image"><img src="img/mypics/7.jpg" alt="Image"></div>     
-        <div class="item img-responsive fit-image"><img src="img/mypics/8.jpg" alt="Image"></div>     
-      </div> 
-    </div>
-  </div>
-  <!-- About Section -->
-  <div id="about-section">
-    <div class="container">
-      <div class="section-title text-center wow fadeInDown">
-        <h2><strong>About</strong> me</h2>
-        <hr>
-        <div class="clearfix"></div>        
+    </section>
+
+    <section id="work" class="section-shell section">
+      <div class="section-heading">
+        <p class="eyebrow">01 / Selected work</p>
+        <h2>Reliable products,<br><em>thoughtfully engineered.</em></h2>
+        <p class="section-heading__copy">A few chapters from a decade of building applications, integrations and platforms that people depend on.</p>
       </div>
-      <div class="row">
-        <div class="col-md-6 wow fadeInLeft"> <img src="img/about.png" class="img-responsive"> </div>
-        <div class="col-md-6 wow fadeInRight">
-          <h4>Who I am</h4>
-          <p>So now you have come here already, I hope you know something about me. I'm born and brought up in Agra, now
-            in Hyderabad, living and enjoying my life just like a normal human being.</p>
-          <div class="space"></div>
-          <h4>What I do & My Hobbies</h4>
-          <p> Well, I'm an IT Professional. Do check out My work section, if you wanna know more about it.</p>
-          <div class="space"></div>
-          <div class="list-style">
-            <div class="row">
-              <div class="col-lg-6 col-sm-6 col-xs-12">
-                <ul>
-                  <li>Coding</li>
-                  <li>Exploring new Technologies</li>
-                  <li>Travelling (Exploring new places)</li>
-                  <li>Long Drives</li>
-                </ul>
-              </div>
-              <!-- <div class="col-lg-6 col-sm-6 col-xs-12">
-                <ul>
-                  <li>Lorem ipsum dolor</li>
-                  <li>Consectetur adipiscing</li>
-                  <li>Duis sed dapibus leo</li>
-                  <li>Sed commodo nibh ante</li>
-                </ul>
-              </div>-->
-            </div>
+      <div class="work-grid">
+        <article class="work-card work-card--featured">
+          <div class="work-card__image"><img src="img/portfolio/01-preview.jpg" alt="Football platform project preview"></div>
+          <div class="work-card__body">
+            <div class="work-card__top"><span>01 — Platform engineering</span><span>2019 — now</span></div>
+            <h3>Football platform</h3>
+            <p>Referee registration and account management built as a scalable, event-driven platform.</p>
+            <div class="tag-list"><span>.NET Core</span><span>Azure Service Bus</span><span>Angular</span><span>SQL Server</span></div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Team Section -->
-  <div id="team-section" class="text-center">
-    <div class="container">
-      <div class="section-title wow fadeInDown">
-        <h2>Key<strong> Skills</strong></h2>
-        <hr>
-        <div class="clearfix"></div>
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p> -->
-      </div>
-      <div id="row">
-        <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="200ms">
-          <div class="thumbnail"> <img src="img/skills/01.png" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>.Net Framework</h3>
-
-            </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__image"><img src="img/portfolio/02-preview.jpg" alt="Smart bikes project preview"></div>
+          <div class="work-card__body">
+            <div class="work-card__top"><span>02 — Cloud operations</span><span>2018 — 2019</span></div>
+            <h3>CCI Smart Bikes</h3>
+            <p>REST APIs and scheduled Azure jobs powering reliable smart-bike operations.</p>
+            <div class="tag-list"><span>Web API</span><span>Azure Batch</span><span>CI/CD</span></div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="400ms">
-          <div class="thumbnail"> <img src="img/skills/02.png" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>C#</h3>
-
-            </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__image"><img src="img/portfolio/03-preview.jpg" alt="Learning management system project preview"></div>
+          <div class="work-card__body">
+            <div class="work-card__top"><span>03 — Product foundations</span><span>2016 — 2017</span></div>
+            <h3>Learning management system</h3>
+            <p>Controllers, stored procedures and quality practices for a distributed learning platform.</p>
+            <div class="tag-list"><span>AngularJS</span><span>ASP.NET</span><span>SQL Server</span></div>
           </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="600ms">
-          <div class="thumbnail"> <img src="img/skills/03.png" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>HTML 5</h3>
+        </article>
+      </div>
+    </section>
 
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="800ms">
-          <div class="thumbnail"> <img src="img/skills/04.png" alt="..." class="img-circle team-img">
-            <div class="caption">
-              <h3>Angular 2</h3>
+    <section class="capabilities section-shell section">
+      <div class="section-heading">
+        <p class="eyebrow">02 / What I bring</p>
+        <h2>From first diagram<br>to <em>final deployment.</em></h2>
+      </div>
+      <div class="capabilities-grid">
+        <div class="capability"><span>01</span><h3>Backend & APIs</h3><p>Clean, dependable services with C#, .NET Core, REST and SQL Server.</p></div>
+        <div class="capability"><span>02</span><h3>Azure integration</h3><p>Event-driven workflows with Functions, Service Bus, Batch Jobs and microservices.</p></div>
+        <div class="capability"><span>03</span><h3>Frontend leadership</h3><p>Angular architecture and UI delivery with a focus on quality and clarity.</p></div>
+        <div class="capability"><span>04</span><h3>Technical leadership</h3><p>Architecture decisions, story refinement, reviews and mentoring that move teams forward.</p></div>
+      </div>
+    </section>
 
-            </div>
-          </div>
-        </div>
+    <section id="experience" class="section-shell section experience">
+      <div class="section-heading">
+        <p class="eyebrow">03 / Experience</p>
+        <h2>A steady record of<br><em>shipping what matters.</em></h2>
       </div>
-    </div>
-  </div>
-  <!-- Testimonials Section -->
-  <!--<div id="testimonials-section" class="text-center">
-  <div class="container">
-    <div class="section-title wow fadeInDown">
-      <h2>What our <strong>Clients</strong> say</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div id="testimonial" class="owl-carousel owl-theme wow fadeInUp" data-wow-delay="200ms">
-          <div class="item">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
-            <p><strong>John DOE</strong>, CEO, Company.</p>
-          </div>
-          <div class="item">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
-            <p><strong>Jenny DOE</strong>, CEO, Company.</p>
-          </div>
-          <div class="item">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at duis sed dapibus leo nec ornare diam.</p>
-            <p><strong>John DOEn</strong>, CEO, Company.</p>
-          </div>
-        </div>
+      <div class="timeline">
+        <article class="timeline-item timeline-item--current">
+          <div class="timeline-date">Mar 2019 — Present</div>
+          <div><h3>Senior Associate — Full Stack Developer</h3><p class="timeline-company">Cognizant Technology Solutions · Noida</p><p>Designing .NET Core microservices and asynchronous Azure integrations for a football platform. Leading Angular delivery, shaping architecture and mentoring associate developers.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">Jan 2018 — Mar 2019</div>
+          <div><h3>Associate — Full Stack Developer</h3><p class="timeline-company">Cognizant Technology Solutions · Hyderabad</p><p>Built REST APIs and automated business processes with Azure Batch Jobs for the CCI Smart Bikes platform.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">May 2016 — Dec 2017</div>
+          <div><h3>Programmer Analyst</h3><p class="timeline-company">Cognizant Technology Solutions</p><p>Delivered enhancements, automation and production support for Cigna distributed applications.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date">Jan 2016 — May 2016</div>
+          <div><h3>Programmer Analyst Trainee</h3><p class="timeline-company">Cognizant Technology Solutions · Chennai</p><p>Started the journey building controllers, stored procedures and tests for a learning management system.</p></div>
+        </article>
       </div>
-    </div>
-  </div>
-</div>-->
+    </section>
 
-  <!-- Contact Section -->
-  <div id="contact-section" class="text-center">
-    <div class="container">
-      <div class="section-title wow fadeInDown">
-        <h2><strong>Contact</strong> me</h2>
-        <hr>
-        <p></p>
+    <section id="about" class="about section-shell section">
+      <div class="about-card">
+        <p class="eyebrow">04 / A little more</p>
+        <h2>Curious by nature.<br><em>Practical by design.</em></h2>
+        <p>My work sits at the intersection of product thinking and engineering discipline. I enjoy making complex systems understandable — for the people who use them, and for the teams who maintain them.</p>
+        <div class="education"><span>Education</span><strong>M.Tech, Computer Science · CGPA 9.5</strong><small>JayPee University of Information Technology · 2015</small></div>
+        <div class="education"><span></span><strong>B.Tech, Computer Science · 75.24%</strong><small>Uttar Pradesh Technical University · 2012</small></div>
       </div>
-      <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="200ms">
-        <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
-          <p>Sorry...Please contact me on my email ID.
-          </p>
-        </div>
-        <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
-          <p>gajendratyagi1991@gmail.com</p>
-        </div>
-        <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
-          <p> Sorry again...Please contact me on my email ID.</p>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-      <div class="col-md-8 col-md-offset-2 wow fadeInUp" data-wow-delay="400ms">
-        <h3>Leave me a message</h3>
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-                <p class="help-block text-danger"></p>
-              </div>
+    </section>
 
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message"
-              required></textarea>
-            <p class="help-block text-danger"></p>
-          </div>
-          <div id="success"></div>
-          <button type="submit" class="btn btn-default">Send Message</button>
-        </form>
-        <div class="social">
-          <ul>
-            <li><a href="https://www.facebook.com/gajendratyagi1991"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="https://twitter.com/gajendratyagi"><i class="fa fa-twitter"></i></a></li>
-            <!--           <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-            <li><a href="https://github.com/gajendratyagi007"><i class="fa fa-github"></i></a></li>
-            <li><a href="https://www.instagram.com/tyagi_gajendra/"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="https://in.linkedin.com/in/gajendra-tyagi-44b94247"><i class="fa fa-linkedin"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="footer">
-    <!--  <div class="container">
-      <p>Copyright © Tempo. Design by <a href="http://www.templategarden.com" rel="nofollow">TemplateGarden</a></p>
-  </div> -->
-  </div>
+    <section id="contact" class="contact section-shell section">
+      <p class="eyebrow">05 / Start a conversation</p>
+      <h2>Have a complex problem?<br><em>Let’s build something scalable.</em></h2>
+      <a class="contact-email" href="mailto:gajendratyagi1991@gmail.com">gajendratyagi1991@gmail.com <span>↗</span></a>
+      <div class="contact-links"><a href="https://www.linkedin.com/in/gajendra-tyagi-44b94247/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/gajendratyagi007" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+    </section>
+  </main>
 
-  <!-- Portfolio Modals -->
-  <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"> </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2>LMS</h2>
-              <p class="item-intro">Learning Management System</p>
-              <img class="img-responsive img-centered" src="img/portfolio/lms.jpg" alt="LMS">
-              <p>The main goal of this project was to implement a digital solution for learning management of trainees.
-                For me, it was to learn how to work on existing code and improve the functionalities with the help of
-                design and programming and to learn the technology stack that was being used with project.</p>
-              <ul class="list-inline">
-                <li><strong>Technologies Used</strong>: C# \br
-                  CSS,
-                  HTML5,
-                  AngularJS,
-                  Bootstrap,
-                  SQL Server,
-                  Model View Controller Framework,
-                  Windows Communicaton Foundation Framework</li>
-                <li><strong>Category</strong>: Web Application</li>
-                <li><strong>My Role</strong>:Working in Learner Team I focused on sketching and designing the
-                  requirement for front-end and focused on the implementation of functionalities to bring on front-end.
-                  After integration inside our team, we worked with other teams to merge the changes.</li>
-              </ul>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close
-                Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"> </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2>ENHANCING TRAINEE ENGAGEMENT</h2>
-              <p class="item-intro">"How might we improve the engagement experience of graduate trainees
-                within the first 365 days (-90 to + 275) using digital solutions."
-
-              </p>
-              <img class="img-responsive img-centered" src="img/portfolio/dst.jpg" alt="">
-              <p>The main goal of this project was to learn about the trainee's needs and find digital solution to
-                fulfill those needs. This was a fun project to build a better understanding of the design thinking
-                methodology, but also a great way to solve the problems faced by trainees pre and post joining. The team
-                enjoyed the effort and I was able to learn more about User research and prototyping the ideas from the
-                Design Thinking Workshop.</p>
-              <ul class="list-inline">
-                <img class="img-responsive img-centered" src="img/portfolio/d1.png" alt="">
-                <li><strong>Journey Map</strong>: From the collected data we created a timeline for the user. From -90
-                  to +275 days, which included pre-joining formalities, Joining day Induction, Assessments, Learning
-                  schedule, Graduation, Buisness unit Transition and Dovetail assessment. We also created a bard where
-                  we categorized the things and ideas in three columns I Like, I Wish and What If. This gave us
-                  knowledge of what there is in Academy that users like and can be improved with help of "I Wish" column
-                  and "What If" column contained the great ideas.</li>
-                <img class="img-responsive img-centered" src="img/portfolio/d2.png" alt="">
-                <li><strong>Ideas to Reality</strong>: Now this was the time to bring ideas into reality where my team
-                  came up with a prototype. Using this aplication trainee can enjoy the training phase as we made it
-                  very interactive by adding features like Select Technology, Techno Meter and Game on. One of the
-                  features of this prototype that was appriciated the most was Game On. Rather than the monotonous
-                  concept of assessments, we tried to tackle this area with a gamified approach.
-                  "WHAT WE LEARN WITH PLEASURE WE NEVER FORGET"</li>
-                <li><strong>Category</strong>: WorkShop</li>
-              </ul>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close
-                Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"> </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2>Online Movie Ticket Booking</h2>
-              <p class="item-intro"></p>
-              <img class="img-responsive img-centered" src="img/portfolio/onlinemovie.jpg"
-                alt="Online Movie Ticket Booking">
-              <p>The project titled as ONLINE MOVIE TICKET BOOKING is a web based application. The main purpose of our
-                online ticket booking system is to provide another way for the customer to buy cinema ticket. It is an
-                automatic system.
-                After inserting the data to database, staff need not to due with the order receive through the
-                system.This system is basically aimed to provide the customer the complete information of the movie ,
-                according to which the customer can book the tickets and the refund facility provides more flexibility
-                to the system.
-              </p>
-              <ul class="list-inline">
-                <li><strong>Category</strong>: Web Application</li>
-                <li><strong>Front end</strong>: Asp.net</li>
-                <li><strong>Back end</strong>: SQL Server</li>
-
-              </ul>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close
-                Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"> </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2>Restaurant Management System</h2>
-
-              <img class="img-responsive img-centered" src="img/portfolio/restaurant.jpg" alt="">
-              <p>This project was a web application project to make life easier for the restaurants and their customers.
-                It provides a platform where both restaurant owners and the customers who want to book table in their
-                favourite restaurants or want to order something, can resgiter to this application, and can explore the
-                benefits, special coupans, offers provided from the restaurants. </p>
-              <ul class="list-inline">
-                <li><strong>Tools & technology used</strong>: Microsoft Visual studio 2008, Sql Server Management
-                  Studio, ASP.Net</li>
-                <li><strong>Category</strong>: Web Application</li>
-              </ul>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close
-                Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 5 -->
-  <!--<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl"> </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body"> 
-            <!-- Project Details Go Here -->
-  <!-- <h2>Project Title</h2>
-            <p class="item-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <img class="img-responsive img-centered" src="img/portfolio/05-preview.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet, sea essent iisque iudicabit te, pro no justo delicata inimicus, et oblique docendi laboramus eum. Ei minim fabulas pertinacia pro, graeco urbanitas reformidans quo id. Error congue tacimates ei vis, facer facete ius cu, audiam prodesset pri ut. Id semper fuisset vel, has dolorum menandri eu.</p>
-            <ul class="list-inline">
-              <li><strong>Client</strong>: John Doe</li>
-              <li><strong>Category</strong>: Web Design</li>
-            </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"> </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2>Anchor Free Positioning For Target
-                Tracking in Wireless Sensor Networks</h2>
-              <p class="item-intro"></p>
-              <img class="img-responsive img-centered" src="img/portfolio/wsn.png" alt="">
-              <p><strong>Abstract</strong>: Wireless sensor networks are extremely being used in different environments
-                to
-                perform various monitoring tasks such as search, rescue, disaster relief, target
-                tracking and a number of tasks in smart environments. In most sensor network
-                applications, the information gathered by micro-sensors will be meaningless unless
-                the location from where the information is obtained is known. This makes localization
-                capabilities highly desirable in sensor networks. Till now, various localization
-                algorithms have been proposed to fulfillll the same objective. However, all of these
-                algorithms are dependent on various factors to get the location information like
-                GPS devices, a large number of anchor nodes, known network topology, communication
-                cost etc. Accuracy is one more concern, which have to be look upon
-                because it is directly dependent on the above mentioned factors. So, keeping all
-                these things in mind, the main aim is to reduce the dependency on the anchor
-                nodes without affecting the accuracy. Previous researches have shown the success
-                of virtual coordinates in a wide variety of ad hoc and sensornet environments
-                for the routing purpose. So this thesis report introduced the concept of virtual
-                coordinates to make localization system anchor free, as well as proposed a new
-                algorithm for the detection of boundary nodes of the network and the holes in the
-                network having less percentage of false positivity.</p>
-              <ul class="list-inline">
-                <li><strong>Tools Used</strong>: Contiki's Coojs Simulator, Matlab</li>
-                <li><strong>Category</strong>: Wireless Sensor Networks Research Work</li>
-                <li><strong>Authors</strong>: Gajendra Tyagi, Dr. Shailendra Shukla</li>
-
-              </ul>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close
-                Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 7 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"> </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2>Co-Leader Based Leader Election Algorithm in Distributed
-                Environment</h2>
-              <p class="item-intro"></p>
-              <img class="img-responsive img-centered" src="img/portfolio/distri1.jpg" alt="">
-              <p><strong>Abstract</strong>: In a distributed environment, several independent nodes work together by
-                exchanging
-                messages to each other. To achieve synchronization and co-ordination among the nodes, there is a
-                need to elect one leader node. Previously several algorithms have been proposed,one of the classical
-                and well-known algorithms to elect the leader node is bully algorithm. Ring algorithm is another
-                modified version of bully algorithm. But these algorithms are having a large number of messages
-                during election process. Till now several amendments are done over the bully algorithm to reduce
-                the number of messages in the leader election process. This paper presents the concept of co-leader
-                based leader election mechanism by which the number of messages can be greatly reduced and hence
-                can reduce network traffic. Further, we have evaluated the performance of our proposed approach by
-                considering the testbed of 10, 100 and 1000 nodes and shown the comparative analysis.</p>
-              <ul class="list-inline">
-                <li><strong>Authors</strong>: Gajendra Tyagi, Ankit Mundra, Jitendra Tyagi, Dr. Nitin Rakesh</li>
-                <li><strong>Category</strong>: Distributed System Research Work</li>
-                <li><strong>Published in</strong>: ICC 2014 - Computer Networks and Security</li>
-              </ul>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close
-                Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 8 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"> </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2>Location Based Coordinator Election Algorithm inDistributed
-                Environment</h2>
-              <p class="item-intro"></p>
-              <img class="img-responsive img-centered" src="img/portfolio/distri1.jpg" alt="">
-              <p><strong>Abstract</strong>: In distributed computing, a task is divided into subtasks
-                and each task is processed by one of the computers available in
-                the network. These computers communicate with each other
-                through message passing. Also, it is necessary to achieve
-                synchronization between these multiple nodes. In order to
-                achieve the same and coordination, there is a need of coordinator
-                node also known as leader node. Now, to elect node we have
-                several algorithms proposed by various researchers and over the
-                past years several changes have been take place over these
-                algorithms to optimize the algorithmic complexity (in term of
-                time, number of messages and robustness). In this paper we
-                propose a location and priority based approach to select the
-                coordinator node among diverse nodes present in a distributed
-                environment. Based on our experimental results, the proposed
-                approach reducesthe network traffic by reducing number of
-                messages in the network. Furthermore, this approach is justified
-                by comparing it with previously proposed election algorithmswith
-                respect tothe number of messages passed for election process. </p>
-              <ul class="list-inline">
-                <li><strong>Authors</strong>: Sheenu Chabbra, Gajendra tyagi, Ankit Mundra, Dr. Nitin Rakesh</li>
-                <li><strong>Category</strong>: Distributed System Research Work</li>
-                <li><strong>Published in</strong>: 2015 International Conference on Computer and Computational Sciences
-                  (ICCCS)</li>
-              </ul>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close
-                Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 9 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content">
-      <div class="close-modal" data-dismiss="modal">
-        <div class="lr">
-          <div class="rl"> </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2>Distributed Banking System</h2>
-
-              <img class="img-responsive img-centered" src="img/portfolio/bank.jpg" alt="">
-              <p>This project named as distributed banking system consists of a server and some Automated Teller
-                Machines (ATM). The server manages all users’ account information. A customer can invoke the following
-                operations at an ATM.</p>
-
-              <ol>
-                <li><strong>Cash Deposit</strong>: This operation enables the user to deposit some amount in his
-                  account.</li>
-                <li><strong>Withdraw</strong>: With this operation a user can withdraw cash if he has sufficient cash in
-                  his account. Otherwise a message of not having sufficient balance will be shown by using a popup
-                  message.</li>
-                <li><strong>Balance Inquiry</strong>: This operation returns the available balance of user account.</li>
-                <li><strong>Transfer</strong>: With this operation, a user can transfer amount from his account to other
-                  account with the given account no.</li>
-              </ol>
-              <p>We were required to write this client-server (banking system) program which communicates via RPC. It
-                was recommended to develop this system using JAVA/RMI (the functionality comes in the package java.rmi).
-              </p>
-
-
-              <ul class="list-inline">
-                <li><strong>Category</strong>: Desktop Application</li>
-                <li><strong>Front end</strong>: Java</li>
-                <li><strong>Back end</strong>: SQL Server</li>
-              </ul>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close
-                Project</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script type="text/javascript" src="js/bootstrap.js"></script>
-  <script type="text/javascript" src="js/SmoothScroll.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prettyPhoto/3.1.6/js/jquery.prettyPhoto.min.js"></script> 
-  <script type="text/javascript" src="js/jquery.isotope.js"></script>
-  <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-  <script type="text/javascript" src="js/contact_me.js"></script>
-  <script type="text/javascript" src="js/owl.carousel.js"></script>
-
-  <!-- Javascripts
-    ================================================== -->
-  <script type="text/javascript" src="js/main.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-<script>
-  $(document).ready(function() {
- 
- $("#owl-demo").owlCarousel({
-
-     autoPlay: 3000, //Set AutoPlay to 3 seconds
-
-     items : 4,
-     itemsDesktop : [1199,3],
-     itemsDesktopSmall : [979,3]
-
- });
-
-});
-</script>
+  <footer class="site-footer section-shell"><span>© 2026 Gajendra Tyagi</span><span>Built with intention.</span></footer>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.site-nav');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+    });
+    nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => nav.classList.remove('is-open')));
+  </script>
 </body>
-
 </html>
